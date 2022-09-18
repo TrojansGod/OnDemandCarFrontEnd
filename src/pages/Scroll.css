@@ -1,0 +1,59 @@
+.content1 {
+position: absolute;
+width: 100%;
+height: 100%;
+top:0;
+display: flex;
+flex-direction: top;
+justify-content: top;
+align-items: top;
+color: white;
+}
+.insideStyles{
+    opacity: 60%;
+}
+.Size
+{
+    line-height: .3;
+}
+.Bold{
+    
+    font-family: Courier, monospace;
+    margin: 0.8em 0;
+    font-size: 40px;
+    color: rgb(214, 86, 31);
+}
+.content2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: top;
+    justify-content: center;
+    align-items: top;
+    color: white;
+    }
+    .content3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        display: flex;
+        flex-direction: left;
+        justify-content: top;
+        align-items: left;
+        color: white;
+        }
+.main{
+    height: 100vh;
+    width: 100%;
+
+
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
