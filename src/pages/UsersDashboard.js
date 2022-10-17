@@ -84,7 +84,7 @@ export const UsersDashboard = () => {
                     <div className='row'>
                     
                     <div className='col-md-2'>
-                        <button style={{backgroundColor:'#71706E ',border:"0px"}}  onClick={() => setShowChild1(!showChild1) } className="btn btn-primary">SHOW ALL WASHERS</button>
+                        <button style={{backgroundColor:'#71706E ',border:"0px"}}  onClick={() => setShowChild1(!showChild1) } className="btn btn-primary">Show All Washers</button>
                         <br/>
                        
                     </div>

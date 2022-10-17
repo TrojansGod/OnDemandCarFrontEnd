@@ -74,7 +74,7 @@ const Scroll = () => (
                                     <li>Inflation of tyres with Nitrogen</li>
                                     <li>Only basic cars.</li>
                                 </ul>
-                                <button type="button" className="btn btn-lg btn-block btn-primary">Register</button>
+                                <button type="button" className="btn btn-lg btn-block btn-primary">Know More</button>
                             </div>
                         </div>
                         <div className="card mb-4 box-shadow col" id="pricingCards">
@@ -89,7 +89,7 @@ const Scroll = () => (
                                     <li>Inflation of tyres with Nitrogen</li>
                                     <li>Premium cars included.</li>
                                 </ul>
-                                <button type="button" className="btn btn-lg btn-block btn-primary">Register</button>
+                                <button type="button" className="btn btn-lg btn-block btn-primary">Know More</button>
                             </div>
                         </div>
                         <div className="card mb-4 box-shadow col" id="pricingCards">
@@ -104,7 +104,7 @@ const Scroll = () => (
                                     <li>Complete servicing</li>
                                     <li>Sports car included</li>
                                 </ul>
-                                <button type="button" className="btn btn-lg btn-block btn-primary">Register</button>
+                                <button type="button" className="btn btn-lg btn-block btn-primary">Know More</button>
                             </div>
                         </div>
                     </div>

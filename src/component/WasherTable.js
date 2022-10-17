@@ -18,24 +18,30 @@ export default function WasherTable() {
        </Link>)
   };
 
-    const handleDelete = (emailId) => {
-        console.log("Printing emailId", emailId);
-        removeWasher
-          .removeWasher(emailId)
-          .then((response) => {
-            console.log("course deleted successfully", response.data);
-            init();
-          })
-          .catch((error) => {
-            console.log("Something went wrong", error);
-          });
-      };
+  const handleDelete = (emailId) => {
+    console.log("Printing emailId", emailId);
+    removeWasher
+      .removeWasher(emailId)
+      .then((response) => {
+        console.log("course deleted successfully", response.data);
+        init();
+      })
+      .catch((error) => {
+        console.log("Something went wrong", error);
+      });
+  };
 
-    const btnUpdate = () =>{
-        return (<button className="btn btn-danger ml-2" onClick={() => { handleDelete(emailId);}}>
-            Delete
-          </button>)
-    };
+
+
+
+  const btnDelete = () => {
+    // return ()
+    return (
+      <button className="btn btn-danger ml-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Delete
+        </button>
+    )
+  };
 
     const columns = [
         { field: 'emailId', headerName: 'EmailId', width: 150 },
@@ -46,7 +52,7 @@ export default function WasherTable() {
         { field: 'pincode', headerName: 'Pincode', width: 100 },
         { field: 'landmark', headerName: 'Landmark', width: 100 },
         { field: 'phoneNo', headerName: 'phoneNo', width: 100 },
-        {field: 'delete', headerName: 'Delete', width: 100, renderCell: btnUpdate, hide:q },
+        {field: 'delete', headerName: 'Delete', width: 100, renderCell: btnDelete, hide:q },
         {field: 'placeOrder', headerName: 'Place', width: 160, renderCell: placeOrder}
       ];
 
@@ -84,6 +90,25 @@ export default function WasherTable() {
         // checkboxSelection
         style={{background:"white"}}
       />
+      <div className="modal fade" data-bs-backdrop="false" id="exampleModal"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title text-dark" id="exampleModalLabel">Confirmation</h5>
+                  <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div className="modal-body text-dark">
+                  Are you sure want to delete ?
+                </div>
+                <div className="modal-footer">
+                  <button type="button" className="btn btn-secondary " data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" className="btn btn-primary" data-bs-dismiss="modal"
+                    onClick={() => { handleDelete(emailId);}}
+                  >Confirm</button>
+                </div>
+              </div>
+            </div>
+          </div>
       
       {console.log(emailId)}
     </div>

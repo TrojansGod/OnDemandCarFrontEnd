@@ -113,7 +113,7 @@ export const AdminDashboard = () => {
                        
                     </div> 
                     <div className='col-sm-2'>
-                        <button style={{backgroundColor:'#71706E ',border:"0px"}} onClick={() => {setShowChild3(!showChild3); setShowChild1(false);setShowChild2(false);setShowChild(false);}} className="btn btn-primary"title='ALL ORDERS'>ORDER LIST</button>
+                        <button style={{backgroundColor:'#71706E ',border:"0px"}} onClick={() => {setShowChild3(!showChild3); setShowChild1(false);setShowChild2(false);setShowChild(false);}} className="btn btn-primary"title='ALL ORDERS'>Order List</button>
                         <br/>
                     
            
