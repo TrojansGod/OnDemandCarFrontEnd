@@ -24,12 +24,12 @@ function Header1()
     choice=true;
     if(localStorage.getItem("6")=="admin")
   {
-      y="ADMIN EXPLORER";
+      y="Admin Explorer";
       adressy="/adash";
       adressz="http://localhost:3000/adash"
   }
   else{
-    y="USER EXPLORER";
+    y="User Explorer";
     adressy="/udash";
     adressz="http://localhost:3000/udash"
 
